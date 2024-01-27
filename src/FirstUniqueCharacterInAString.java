@@ -32,11 +32,25 @@ public class FirstUniqueCharacterInAString {
             return index;
         }
 
+    public static int firstUniqCharNew(String str) {
+            for(int i = 0; i < str.length(); i++) {
+                System.out.println("----"+i);
+                for (int j = 0; j < str.length(); j++) {
+                    if(i != j && (str.charAt(i) != str.charAt(j)) ) {
+                        //System.out.println("--->"i);
+                        return i;
+                    }
+                }
+
+            }
+            return -1;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String to find the first unique character");
         String str = sc.nextLine();
-        int index = firstUniqChar(str);
+        int index = firstUniqCharNew(str);
         System.out.println(index);
     }
 }
