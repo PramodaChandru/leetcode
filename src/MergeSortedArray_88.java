@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class MergeSortedArray {
+public class MergeSortedArray_88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         for (int i = m; i < m + n; i++) {
             nums1[i] = nums2[i - m];
@@ -23,7 +23,7 @@ public class MergeSortedArray {
     }
 
     public static void main(String[] args) {
-        MergeSortedArray msa = new MergeSortedArray();
+        MergeSortedArray_88 msa = new MergeSortedArray_88();
         int[] arr = {1, 2, 3, 0, 0, 0};
         msa.merge(arr, 3, new int[]{2, 5, 6}, 3);
         System.out.println("First approach : ");
