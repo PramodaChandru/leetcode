@@ -19,6 +19,6 @@ public class RemoveElement_27 {
                 System.out.println("Return false");
             }
         }
-        System.out.println("All done");
+        System.out.println("Test Passed");
     }
 }
