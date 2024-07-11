@@ -7,11 +7,10 @@ public class DuplicateValues_26 {
     }
 
     public static int removeDup(int[] nums) {
-
-        String s = "";   // s --> ""
-        s.concat("p");       //s --> ""   // "p"
+        String s = "";
+        s.concat("p");
         System.out.println("s initial ==> " + s + "test");
-        s = s.concat("p");  //  s --> "p"
+        s = s.concat("p");
         System.out.println("s final ==> " + s);
 
         StringBuffer sb = new StringBuffer();
