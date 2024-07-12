@@ -52,6 +52,10 @@ class Fuel {
 //        int X3 = 3, Y3 = 3, Z3 = 3;
 //        System.out.println(solution.solution(A3, X3, Y3, Z3));
 
+        //        int[] A3 = {3, 3, 3};
+//        int X3 = 3, Y3 = 3, Z3 = 3;
+//        System.out.println(solution.solution(A3, X3, Y3, Z3));
+
         int[] A1 = {10, 15, 12};
         int X1 = 20, Y1 = 30, Z1 = 25;
         System.out.println(solution.solution(A1, X1, Y1, Z1));  // Expected output: 8
