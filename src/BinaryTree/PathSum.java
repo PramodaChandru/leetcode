@@ -1,14 +1,14 @@
-/**
+package BinaryTree; /**
  * 112. PathSum
  *
  * Definition for a binary tree node.
- * public class TreeNode {
+ * public class BinaryTree.TreeNode {
  *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *     BinaryTree.TreeNode left;
+ *     BinaryTree.TreeNode right;
+ *     BinaryTree.TreeNode() {}
+ *     BinaryTree.TreeNode(int val) { this.val = val; }
+ *     BinaryTree.TreeNode(int val, BinaryTree.TreeNode left, BinaryTree.TreeNode right) {
  *         this.val = val;
  *         this.left = left;
  *         this.right = right;
@@ -35,7 +35,7 @@
  Time Complexity: O(n) each node will be visited atleast once in the worst case
  Space Complexity: O(n) in the worst case for skewed tree
  */
-class BT_PathSum {
+class PathSum {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root == null) {
             return false;
@@ -50,7 +50,7 @@ class BT_PathSum {
     }
 
     public static void main(String[] args) {
-        BT_PathSum ps = new BT_PathSum();
+        PathSum ps = new PathSum();
         TreeNode root = new TreeNode(2);
         TreeNode rootLeft = new TreeNode(3);
         root.left = rootLeft;

@@ -1,19 +1,21 @@
+package BinaryTree;
+
 /**
  * Definition for a binary tree node.
- * public class TreeNode {
+ * public class BinaryTree.TreeNode {
  *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *     BinaryTree.TreeNode left;
+ *     BinaryTree.TreeNode right;
+ *     BinaryTree.TreeNode() {}
+ *     BinaryTree.TreeNode(int val) { this.val = val; }
+ *     BinaryTree.TreeNode(int val, BinaryTree.TreeNode left, BinaryTree.TreeNode right) {
  *         this.val = val;
  *         this.left = left;
  *         this.right = right;
  *     }
  * }
  */
-class BT_PathSumII {
+class PathSumII {
     private int maxSum;
     private int maxPathSumHelper(TreeNode root) {
         if (root == null) {
@@ -34,7 +36,7 @@ class BT_PathSumII {
     }
 
     public static void main(String[] args) {
-        BT_PathSumII ps = new BT_PathSumII();
+        PathSumII ps = new PathSumII();
         TreeNode root = new TreeNode(2);
         TreeNode rootLeft = new TreeNode(3);
         root.left = rootLeft;

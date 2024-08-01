@@ -1,14 +1,14 @@
-/**
+package BinaryTree; /**
  * 222. Count Complete Tree Nodes
  *
  * Definition for a binary tree node.
- * public class TreeNode {
+ * public class BinaryTree.TreeNode {
  *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *     BinaryTree.TreeNode left;
+ *     BinaryTree.TreeNode right;
+ *     BinaryTree.TreeNode() {}
+ *     BinaryTree.TreeNode(int val) { this.val = val; }
+ *     BinaryTree.TreeNode(int val, BinaryTree.TreeNode left, BinaryTree.TreeNode right) {
  *         this.val = val;
  *         this.left = left;
  *         this.right = right;
@@ -22,7 +22,7 @@
  Time complexity: O(n) - all the nodes are visited once
  Space Complexity: O(logn) (due to the depth of the recursion stack being the height of the tree)
  */
-class BT_CountNodes {
+class CountNodes {
     public int countNodes(TreeNode root) {
         if(root == null) {
             return 0;
@@ -33,7 +33,7 @@ class BT_CountNodes {
     }
 
     public static void main(String[] args) {
-        BT_CountNodes cn = new BT_CountNodes();
+        CountNodes cn = new CountNodes();
         TreeNode root = new TreeNode(2);
         TreeNode rootLeft = new TreeNode(3);
         root.left = rootLeft;
