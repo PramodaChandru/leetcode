@@ -14,7 +14,6 @@ package Strings;
 public class StringCompression {
     private static int compress(char[] chars) {
         int spIndex = 0;
-
         for(int i = 0; i < chars.length;) {
             final char letter = chars[i];
             int count = 0;
