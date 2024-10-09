@@ -20,8 +20,8 @@ public class UniqChar_387 {
         String s = sc.nextLine();
         System.out.println(firstUniqChar(s));
 
-        System.out.println("Test 1 result ====> " + test("leet", 0));
-        System.out.println("Test 2 result ====> " + test("leel", -1));
+        System.out.println("IntersectionOfTwoArrays 1 result ====> " + test("leet", 0));
+        System.out.println("IntersectionOfTwoArrays 2 result ====> " + test("leel", -1));
     }
 
     public static boolean test(String input, int output) {
