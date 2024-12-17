@@ -34,6 +34,5 @@ public class ConstainsDuplicate {
 
         System.out.println(cd.checkForDuplicate(nums1));
         System.out.println(cd.checkForDuplicate(nums2));
-
     }
 }

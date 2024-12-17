@@ -1,11 +1,11 @@
 package util;
 
 public class SinglyLinkedList {
-    private ListNode head;
+    public static ListNode head;
 
-    private static class ListNode {
-        private int data;
-        private ListNode next;
+    public static class ListNode {
+        public int data;
+        public ListNode next;
 
         public ListNode(int data) {
             this.data = data;
