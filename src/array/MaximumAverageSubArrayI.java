@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 /**
  643. Maximum Average Subarray I

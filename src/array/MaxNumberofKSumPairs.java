@@ -1,8 +1,6 @@
-package Array;
+package array;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 
 public class MaxNumberofKSumPairs {
     private static int maxOperations(int[] nums, int k) {

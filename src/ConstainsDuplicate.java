@@ -3,6 +3,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ConstainsDuplicate {
+
+    private static int count = 0;
+
+    private int count1 = 0;
     public boolean containsDuplicate(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -34,5 +38,19 @@ public class ConstainsDuplicate {
 
         System.out.println(cd.checkForDuplicate(nums1));
         System.out.println(cd.checkForDuplicate(nums2));
+
+        ConstainsDuplicate c1 = new ConstainsDuplicate();
+        ConstainsDuplicate c2 = new ConstainsDuplicate();
+        ConstainsDuplicate.count = 1;
+        c1.count1 = 0;
+        c2.count1 = 2;
+
+        System.out.println(c1.count1);
+        System.out.println(c2.count1);
+
+        System.out.println(count);
+        System.out.println(c1.count1);
+
+
     }
 }

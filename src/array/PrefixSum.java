@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 import static Utility.ArrayUtility.printArray;
 import static Utility.ArrayUtility.sampleArray;

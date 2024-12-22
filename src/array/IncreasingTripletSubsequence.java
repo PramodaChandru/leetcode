@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 public class IncreasingTripletSubsequence {
     private static boolean increasingTriplet(int[] nums) {
