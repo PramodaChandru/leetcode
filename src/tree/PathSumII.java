@@ -1,6 +1,6 @@
-package BinaryTree; /**
- * 222. Count Complete Tree Nodes
- *
+package tree;
+
+/**
  * Definition for a binary tree node.
  * public class BinaryTree.TreeNode {
  *     int val;
@@ -15,30 +15,31 @@ package BinaryTree; /**
  *     }
  * }
  */
-
-/**
- Complexity:
-
- Time complexity: O(n) - all the nodes are visited once
- Space Complexity: O(logn) (due to the depth of the recursion stack being the height of the tree)
- */
-class CountNodes {
-    public int countNodes(TreeNode root) {
-        if(root == null) {
+class PathSumII {
+    private int maxSum;
+    private int maxPathSumHelper(TreeNode root) {
+        if (root == null) {
             return 0;
         }
-        int cl = countNodes(root.left);
-        int cr = countNodes(root.right);
-        return cl + cr + 1;
+
+        int leftSum = Math.max(0, maxPathSumHelper(root.left));
+        int rightSum = Math.max(0, maxPathSumHelper(root.right));
+        maxSum = Math.max(maxSum, leftSum + rightSum + root.val);
+        return Math.max(leftSum, rightSum) + root.val;
+    }
+
+    public int maxPathSum(TreeNode root) {
+        maxSum = Integer.MIN_VALUE;
+        maxPathSumHelper(root);
+        System.out.println(maxSum);
+        return maxSum;
     }
 
     public static void main(String[] args) {
-        CountNodes cn = new CountNodes();
+        PathSumII ps = new PathSumII();
         TreeNode root = new TreeNode(2);
         TreeNode rootLeft = new TreeNode(3);
         root.left = rootLeft;
-
-        System.out.println(cn.countNodes(root));
+        ps.maxPathSum(root);
     }
-
 }

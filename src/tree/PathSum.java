@@ -1,4 +1,4 @@
-package BinaryTree; /**
+package tree; /**
  * 112. PathSum
  *
  * Definition for a binary tree node.

@@ -1,4 +1,4 @@
-package BinaryTree;
+package tree;
 
 /**
  Given: Two integer arrays inorder and postorder, construct and return the binary tree
