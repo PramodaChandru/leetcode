@@ -21,11 +21,12 @@ class FindTheHighestAltitude {
     }
     private static int largestAltitude(int[] gain) {
         int maxValue = 0;
-        int alt = 0;
-        for(int n : gain) {
-            alt += n;
-            maxValue = Math.max(maxValue, alt);
-        }
+        int arr[] = new int[gain.length + 1];
+//        int alt = 0;
+//        for(int n : gain) {
+//            alt += n;
+//            maxValue = Math.max(maxValue, alt);
+//        }
         return maxValue;
     }
 }
