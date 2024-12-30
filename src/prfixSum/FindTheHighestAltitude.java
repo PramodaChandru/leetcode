@@ -27,6 +27,7 @@ class FindTheHighestAltitude {
 //            alt += n;
 //            maxValue = Math.max(maxValue, alt);
 //        }
+
         return maxValue;
     }
 }
