@@ -32,20 +32,44 @@ public class RemovingStarsFromaString {
 //        return sb.toString();
 //    }
 
-    private static String removeStars(String s) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
-            if(s.charAt(i) != '*') {
-                sb.append(s.charAt(i));
-            } else {
-                sb.deleteCharAt(sb.length() - 1);
-            }
-        }
-        return sb.toString();
-    }
+//    private static String removeStars(String s) {
+//        StringBuilder sb = new StringBuilder();
+//        for (int i = 0; i < s.length(); i++) {
+//            if(s.charAt(i) != '*') {
+//                sb.append(s.charAt(i));
+//            } else {
+//                sb.deleteCharAt(sb.length() - 1);
+//            }
+//        }
+//        return sb.toString();
+//    }
+
+
+
+
+
+
+
+
+
+
+
 
     public static void main(String[] args) {
         String str = "leet**cod*e";
         System.out.println(removeStars(str));
+    }
+
+    private static String removeStars(String str) {
+        StringBuilder resultString = new StringBuilder();
+        for(int i = 0; i < str.length(); i++) {
+            if(str.charAt(i) != '*') {
+                resultString.append(str.charAt(i));
+            } else {
+                resultString.deleteCharAt(resultString.length() - 1);
+            }
+        }
+
+        return resultString.toString();
     }
 }
