@@ -1,7 +1,7 @@
 package array;
 
-import static Utility.ArrayUtility.printArray;
-import static Utility.ArrayUtility.sampleArray;
+import static utility.ArrayUtility.printArray;
+import static utility.ArrayUtility.sampleArray;
 
 public class PrefixSum {
     public int[] runningSum(int[] nums) {

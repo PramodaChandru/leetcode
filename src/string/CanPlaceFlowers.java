@@ -1,4 +1,4 @@
-package Strings;
+package string;
 
 /**
  * 605. Can Place Flowers

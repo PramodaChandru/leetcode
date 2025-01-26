@@ -1,4 +1,4 @@
-package Strings;
+package string;
 
 /**
  * 1071. Greatest Common Divisor of Strings

@@ -1,4 +1,4 @@
-package Stack;
+package stack;
 
 /**
  2390. Removing Stars From a String
@@ -9,8 +9,6 @@ package Stack;
  Time Complexity: O(n) - each character is visited at most once
  Space Complexity: O(1) - No additional data structures are used
  */
-
-import java.util.Stack;
 
 public class RemovingStarsFromaString {
 //    private static String removeStars(String s) {

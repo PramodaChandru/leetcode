@@ -1,6 +1,6 @@
 package patterns;
 
-import Utility.ArrayUtility;
+import utility.ArrayUtility;
 
 /**
  * 1. Create a new array with sum of current array index value and the previous values from new array

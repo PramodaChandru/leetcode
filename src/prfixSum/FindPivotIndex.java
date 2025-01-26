@@ -1,7 +1,5 @@
 package prfixSum;
 
-import Utility.ArrayUtility;
-
 /*
 Complexity:
 Time complexity: O(n) each element is visited alteast once.

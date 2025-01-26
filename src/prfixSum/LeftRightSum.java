@@ -1,6 +1,6 @@
 package prfixSum;
 
-import Utility.ArrayUtility;
+import utility.ArrayUtility;
 
 public class LeftRightSum {
     public int[] leftRightDifference(int[] nums) {
